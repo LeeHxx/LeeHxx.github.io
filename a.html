@@ -24,7 +24,78 @@ session_start();
 
 </head>
 <body class="h-100">
-  
+  <?php
+  session_start();
+  require_once('conn.php');
+
+//将查询语句赋给变量$sql
+  $sql1="select * from stu where stuxy='信息工程学院' ";
+  $sql2="select * from stu where stuxy='会计与审计学院' ";
+  $sql3="select * from stu where stuxy='金融与经济学院' ";
+  $sqln2019="select * from stu where stusex='男' and stuyear='2019' ";
+  $sqln2018="select * from stu where stusex='男' and stuyear='2018' ";
+  $sqln2017="select * from stu where stusex='男' and stuyear='2017' ";
+  $sqln2016="select * from stu where stusex='男' and stuyear='2016' ";
+  $sqln2015="select * from stu where stusex='男' and stuyear='2015' ";
+
+  $sqlg2019="select * from stu where stusex='女' and stuyear='2019' ";
+  $sqlg2018="select * from stu where stusex='女' and stuyear='2018' ";
+  $sqlg2017="select * from stu where stusex='女' and stuyear='2017' ";
+  $sqlg2016="select * from stu where stusex='女' and stuyear='2016' ";
+  $sqlg2015="select * from stu where stusex='女' and stuyear='2015' ";
+//执行sql语
+//mysqli_query($conn,$sql) or die('添加数据出错：'.mysql_error());
+  $result1=mysqli_query($conn,$sql1);
+  $num1=mysqli_num_rows($result1);
+  $result2=mysqli_query($conn,$sql2);
+  $num2=mysqli_num_rows($result2);
+  $result3=mysqli_query($conn,$sql3);
+  $num3=mysqli_num_rows($result3);
+
+  $nan2019=mysqli_query($conn,$sqln2019);
+  $n2019=mysqli_num_rows($nan2019);
+  $nan2018=mysqli_query($conn,$sqln2018);
+  $n2018=mysqli_num_rows($nan2018);
+  $nan2017=mysqli_query($conn,$sqln2017);
+  $n2017=mysqli_num_rows($nan2017);
+  $nan2016=mysqli_query($conn,$sqln2016);
+  $n2016=mysqli_num_rows($nan2016);
+  $nan2015=mysqli_query($conn,$sqln2015);
+  $n2015=mysqli_num_rows($nan2015);
+
+  $nv2019=mysqli_query($conn,$sqlg2019);
+  $g2019=mysqli_num_rows($nv2019);
+  $nv2018=mysqli_query($conn,$sqlg2018);
+  $g2018=mysqli_num_rows($nv2018);
+  $nv2017=mysqli_query($conn,$sqlg2017);
+  $g2017=mysqli_num_rows($nv2017);
+  $nv2016=mysqli_query($conn,$sqlg2016);
+  $g2016=mysqli_num_rows($nv2016);
+  $nv2015=mysqli_query($conn,$sqlg2015);
+  $g2015=mysqli_num_rows($nv2015);
+
+
+
+
+
+
+  ?>
+
+  <input type="hidden" class="form-control" id="num1" value="<?php echo $num1; ?>">
+  <input type="hidden" class="form-control" id="num2" value="<?php echo $num2; ?>">
+  <input type="hidden" class="form-control" id="num3" value="<?php echo $num3; ?>">
+
+  <input type="hidden" class="form-control" id="n2019" value="<?php echo $n2019; ?>">
+  <input type="hidden" class="form-control" id="n2018" value="<?php echo $n2018; ?>">
+  <input type="hidden" class="form-control" id="n2017" value="<?php echo $n2017; ?>">
+  <input type="hidden" class="form-control" id="n2016" value="<?php echo $n2016; ?>">
+  <input type="hidden" class="form-control" id="n2015" value="<?php echo $n2015; ?>">
+
+  <input type="hidden" class="form-control" id="g2019" value="<?php echo $g2019; ?>">
+  <input type="hidden" class="form-control" id="g2018" value="<?php echo $g2018; ?>">
+  <input type="hidden" class="form-control" id="g2017" value="<?php echo $g2017; ?>">
+  <input type="hidden" class="form-control" id="g2016" value="<?php echo $g2016; ?>">
+  <input type="hidden" class="form-control" id="g2015" value="<?php echo $g2015; ?>">
   <div class="container-fluid">
     <div class="row">
       <!-- Main Sidebar -->
@@ -88,19 +159,47 @@ session_start();
               </li>
             </ul>
           </div>
+        </aside>
         <!-- End Main Sidebar -->
         <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
           <div class="main-navbar sticky-top bg-white">
             <!-- Main Navbar -->
             <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
               <div class=" w-100      ">
-               
+               <footer class="main-footer d-flex p-2 px-3 bg-white border-top"> 
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="material-icons">perm_identity</i>
+                      <span>管理员信息</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="material-icons">view_agenda</i>
+                      <span>院系信息</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="material-icons">class</i>
+                      <span>班级信息</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="material-icons">supervisor_account</i>
+                      <span>学生信息</span>
+                    </a>
+                  </li>
+                </ul>
+              </footer>
             </div>
             <ul class="navbar-nav border-left flex-row ">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                   <img class="user-avatar rounded-circle mr-2" src="images/avatars/ren.png" alt="User Avatar">
-                  <span class="d-none d-md-inline-block"></span>
+                  <span class="d-none d-md-inline-block"><?php echo $_SESSION['user'];?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-small">
                   <a class="dropdown-item" href="#">
