@@ -6,7 +6,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <title>信息管理系统</title>
     <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/all.css" rel="stylesheet">
@@ -144,34 +144,43 @@ session_start();
                           <th scope="col" class="border-0">姓名</th>
                           <th scope="col" class="border-0">班级</th>
                           <th scope="col" class="border-0">学号</th>
-                          <th scope="col" class="border-0">学院</th>
-                          <th scope="col" class="border-0">籍贯</th>
+                          <th scope="col" class="border-0">学院</th>               
                           <th scope="col" class="border-0">电话</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <?php
-      
-        require_once('conn.php');
-
-        $sql="select * from stu";
-        $result=mysqli_query($conn,$sql);
-        $loginNum=mysqli_num_rows($result);
-        for($i=0; $i<$loginNum; $i++){
-          $row = mysqli_fetch_assoc($result);
-          echo "<tr>";
-          echo "<th scope='row'>{$row['id']}</th>";
-          echo "<td>{$row['stuname']}</td>";
-          echo "<td>{$row['stuclass']}</td>";
-          echo "<td>{$row['stuid']}</td>";
-          echo "<td>{$row['stuxy']}</td>";
-          echo "<td>{$row['jg']}</td>"; 
-          echo "<td>{$row['stutel']}</td>";                  
-          echo "</tr>";
-        }               
-        mysqli_free_result($result);
-        mysqli_close($conn);
-        ?>
+                        <tr>
+                          <td>1</td>
+                          <td>Ali</td>
+                          <td>Kerry</td>
+                          <td>Russian Federation</td>
+                          <td>Gdańsk</td>
+                          <td>107-0339</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Clark</td>
+                          <td>Angela</td>
+                          <td>Estonia</td>
+                          <td>Borghetto di Vara</td>
+                          <td>1-660-850-1647</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Jerry</td>
+                          <td>Nathan</td>
+                          <td>Cyprus</td>
+                          <td>Braunau am Inn</td>
+                          <td>214-4225</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Colt</td>
+                          <td>Angela</td>
+                          <td>Liberia</td>
+                          <td>Bad Hersfeld</td>
+                          <td>1-848-473-7416</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
