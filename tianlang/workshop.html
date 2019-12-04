@@ -44,7 +44,6 @@
                 <div class="dropdown-menu dropdown-menu-small">
                   <a class="dropdown-item  " href="order.html">订单列表</a>
                   <a class="dropdown-item " href="#">增加订单</a>
-                  
                 </div>
               </li>
               <li class="nav-item ">
@@ -52,13 +51,17 @@
                   <i class="material-icons">assignment_returned</i>
                   <span>物料管理</span>
                 </a>
-                
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="false">
                   <i class="material-icons">straighten</i>
                   <span>工艺管理</span>
                 </a>
+                <div class="dropdown-menu dropdown-menu-small">
+                  <a class="dropdown-item " href="#">工艺列表</a>
+                  <a class="dropdown-item " href="#">添加</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="#">
@@ -161,7 +164,7 @@
               </div>
               <div class="col-12 col-sm-4 d-flex align-items-center">
                 <div class="btn-group btn-group-sm btn-group-toggle d-inline-flex mb-4 mb-sm-0 mx-auto" role="group" aria-label="Page actions">
-                  <a href="#smt" class="btn btn-white active" data-toggle="pill"> SMT作业 </a>
+                  <a href="#" class="btn btn-white active"> SMT作业 </a>
                   <a href="dip.html" class="btn btn-white" > DIP作业 </a>
                   <a href="#" class="btn btn-white"> 清洗作业 </a>
                   <a href="#" class="btn btn-white"> 打胶作业 </a>
@@ -172,11 +175,11 @@
             <!-- End Page Header -->
 
 
-            <div class="row fade active show" id="smt">
+            <div class="row">
               <div class="col">
                 <div class="card card-small mb-4">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Active Users</h6>
+                    <h6 class="m-0">SMT作业</h6>
                   </div>
                   <div class="card-body p-0 pb-3 text-center">
                     <table class="table mb-0">
@@ -239,88 +242,6 @@
                 </div>
               </div>
             </div>
-
-            
-
-
-
-
-
-            <div class="row fade" id="dip">
-              <div class="col">
-                <div class="card card-small mb-4">
-                  <div class="card-header border-bottom">
-                    <h6 class="m-0">Active Users</h6>
-                  </div>
-                  <div class="card-body p-0 pb-3 text-center">
-                    <table class="table mb-0">
-                      <thead class="bg-light">
-                        <tr>
-                          <th scope="col" class="border-0">#</th>
-                          <th scope="col" class="border-0">接料日期</th>
-                          <th scope="col" class="border-0">来料数量</th>
-                          <th scope="col" class="border-0">是否齐套</th>
-                          <th scope="col" class="border-0">首检日期</th>
-                          <th scope="col" class="border-0">转序日期</th>
-                          <th scope="col" class="border-0">转序部门</th>
-                          <th scope="col" class="border-0">转序量</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>2019/10/13</td>
-                          <td>234</td>
-                          <td>Russian </td>
-                          <td>2019/11/11</td>
-                          <td>2019/12/11</td>
-                          <td>Gdańsk</td>
-                          <td>339</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>2019/10/14</td>
-                          <td>Angela</td>
-                          <td>Estonia</td>
-                          <td>2019/11/11</td>
-                          <td>2019/12/11</td>
-                          <td>Borghetto  </td>
-                          <td>1647</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>2019/10/15</td>
-                          <td>Nathan</td>
-                          <td>Cyprus</td>
-                          <td>2019/11/11</td>
-                          <td>2019/12/11</td>
-                          <td>Braunau  </td>
-                          <td>4225</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>2019/10/11</td>
-                          <td>Angela</td>
-                          <td>Liberia</td>
-                          <td>2019/11/11</td>
-                          <td>2019/12/11</td>
-                          <td>  Hersfeld</td>
-                          <td>7416</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
           </div>
           <!--<footer class="main-footer d-flex p-2 px-3 bg-white border-top">
             <ul class="nav">
