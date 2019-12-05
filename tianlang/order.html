@@ -24,8 +24,8 @@
 						<nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
 							<a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
 								<div class="d-table m-auto">
-									<img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="images/logo.svg" alt="Shards Dashboard">
-									<span class="  d-md-inline ml-1">生产管理系统</span>
+									<img id="main-logo" class="d-inline-block align-top mr-1" style="max-height: 30px;" src="images/TLlogo-1.png" alt="Dashboard">
+									<span class="  d-md-inline ml-1"></span>
 								</div>
 							</a>
 							<a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
@@ -45,15 +45,18 @@
 								<div class="dropdown-menu dropdown-menu-small">
 									<a class="dropdown-item  active" href="order.php">订单列表</a>
 									<a class="dropdown-item " href="#">增加订单</a>
-
 								</div>
 							</li>
-							<li class="nav-item  ">
-								<a class="nav-link"  href="#" >
+							<li class="nav-item  dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="true">
 									<i class="material-icons">assignment_returned</i>
 									<span>物料管理</span>
 								</a>
-								
+								<div class="dropdown-menu dropdown-menu-small">
+									<a class="dropdown-item " href="#">仓库列表</a>
+									<a class="dropdown-item " href="#">添加</a>
+								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -66,11 +69,16 @@
 									<a class="dropdown-item " href="#">添加</a>
 								</div>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="true">
 									<i class="material-icons">home_work</i>
 									<span>仓库管理</span>
 								</a>
+								<div class="dropdown-menu dropdown-menu-small">
+									<a class="dropdown-item " href="#">仓库列表</a>
+									<a class="dropdown-item " href="#">添加</a>
+								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -80,21 +88,21 @@
 								</a>
 								<div class="dropdown-menu dropdown-menu-small">
 									<a class="dropdown-item " href="workshop.html">车间作业</a>
-									<!--<a class="dropdown-item " href="#">SMT作业</a>
-                              <a class="dropdown-item " href="#">DIP作业</a>
-                              <a class="dropdown-item " href="#">清洗作业</a>
-                              <a class="dropdown-item " href="#">打胶作业</a>
-                              <a class="dropdown-item " href="#">打码作业</a>-->
 									<a class="dropdown-item " href="#">问题反馈记录单</a>
 									<a class="dropdown-item " href="#">物料补领申请单</a>
 								</div>
 							</li>
 
-							<li class="nav-item">
-								<a class="nav-link " href="#">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+								 aria-expanded="true">
 									<i class="material-icons">playlist_add_check</i>
 									<span>质量管理</span>
 								</a>
+								<div class="dropdown-menu dropdown-menu-small">
+									<a class="dropdown-item " href="#">质量列表</a>
+									<a class="dropdown-item " href="#">添加</a>
+								</div>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -103,8 +111,8 @@
 									<span>成品管理</span>
 								</a>
 								<div class="dropdown-menu dropdown-menu-small">
-									<a class="dropdown-item " href="#">出库</a>
-									<a class="dropdown-item " href="#">包装</a>
+									<a class="dropdown-item " href="#">成品列表</a>
+									<a class="dropdown-item " href="#">添加成品</a>
 								</div>
 							</li>
 						</ul>
@@ -115,9 +123,19 @@
 					<div class="main-navbar sticky-top bg-white">
 						<!-- Main Navbar -->
 						<nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
-							<form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
-
-							</form>
+							<div action="#" class=" w-100 d-none d-md-flex d-lg-flex">
+								<div class="d-table " style="
+    margin-top: auto !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+    margin-left: 40px;">
+									<img class="d-inline-block align-top mr-1" style="max-height: 20px;" src="images/TLlogo-2.png" alt="Shards Dashboard">
+									<h5 class="  d-md-inline ml-1">南京天朗电子装配有限公司生产管理系统</h5>
+								</div>
+								
+								
+						
+							</div>
 							<ul class="navbar-nav border-left flex-row ">
 								<li class="nav-item border-right dropdown notifications">
 									<a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"

@@ -36,22 +36,27 @@
           
           <div class="nav-wrapper">
             <ul class="nav nav--no-borders flex-column">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle  " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="false">
                   <i class="material-icons">insert_drive_file</i>
                   <span>订单管理</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-small">
-                  <a class="dropdown-item  " href="order.html">订单列表</a>
+                  <a class="dropdown-item " href="order.php">订单列表</a>
                   <a class="dropdown-item " href="#">增加订单</a>
-                  
                 </div>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#">
+              <li class="nav-item  dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="true">
                   <i class="material-icons">assignment_returned</i>
                   <span>物料管理</span>
                 </a>
+                <div class="dropdown-menu dropdown-menu-small">
+                  <a class="dropdown-item " href="#">仓库列表</a>
+                  <a class="dropdown-item " href="#">添加</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -64,34 +69,40 @@
                   <a class="dropdown-item " href="#">添加</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="true">
                   <i class="material-icons">home_work</i>
                   <span>仓库管理</span>
                 </a>
+                <div class="dropdown-menu dropdown-menu-small">
+                  <a class="dropdown-item " href="#">仓库列表</a>
+                  <a class="dropdown-item " href="#">添加</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">
+                <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="true">
                   <i class="material-icons">all_inclusive</i>
                   <span>生产制造管理</span>
                 </a>
-                <div class="dropdown-menu dropdown-menu-small">          
+                <div class="dropdown-menu dropdown-menu-small">
                   <a class="dropdown-item active" href="workshop.html">车间作业</a>
-                  <!--<a class="dropdown-item " href="#">SMT作业</a>
-                  <a class="dropdown-item " href="#">DIP作业</a>
-                  <a class="dropdown-item " href="#">清洗作业</a>
-                  <a class="dropdown-item " href="#">打胶作业</a>
-                  <a class="dropdown-item " href="#">打码作业</a>-->
                   <a class="dropdown-item " href="#">问题反馈记录单</a>
                   <a class="dropdown-item " href="#">物料补领申请单</a>
                 </div>
               </li>
-            
-              <li class="nav-item">
-                <a class="nav-link " href="#">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                 aria-expanded="true">
                   <i class="material-icons">playlist_add_check</i>
                   <span>质量管理</span>
                 </a>
+                <div class="dropdown-menu dropdown-menu-small">
+                  <a class="dropdown-item " href="#">质量列表</a>
+                  <a class="dropdown-item " href="#">添加</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -100,8 +111,8 @@
                   <span>成品管理</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-small">
-                  <a class="dropdown-item " href="#">出库</a>
-                  <a class="dropdown-item " href="#">包装</a>
+                  <a class="dropdown-item " href="#">成品列表</a>
+                  <a class="dropdown-item " href="#">添加成品</a>
                 </div>
               </li>
             </ul>
